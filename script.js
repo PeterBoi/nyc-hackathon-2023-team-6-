@@ -16,37 +16,37 @@ let displayEmail = document.querySelector(".displayEmail");
 let list = document.querySelector(".list");
 let problem0 = {
   name: "Batman",
-    problem: "How can I get funding for Justice League?",
-    email: "notbrucewayne@gmail.com",
-    cash: "$51-$100",
+  problem: "How can I get funding for Justice League?",
+  email: "notbrucewayne@gmail.com",
+  cash: "$51-$100",
 }
 let problem1 = {
-    name: "Orbe Pierre",
-    problem: "Students are not going to class on time.",
-    email: "DWC@gmail.com",
-    cash: "$51-$100",  
-  }
+  name: "Orbe Pierre",
+  problem: "Students are not going to class on time.",
+  email: "DWC@gmail.com",
+  cash: "$51-$100",
+}
 
 let problem2 = {
-    name: "Jeffery Prince",
-    problem: "Need to have my students clock in for work on time.",
-    email: "prince@gmail.com",
-    cash: "$20-$50",
-  }
+  name: "Jeffery Prince",
+  problem: "Need to have my students clock in for work on time.",
+  email: "prince@gmail.com",
+  cash: "$20-$50",
+}
 
 let problem3 = {
-    name: "John Doe",
-    problem: "Students not going to class on time.",
-    email: "johndoe@gmail.com",
-    cash: "$1-$5",
-  }
+  name: "John Doe",
+  problem: "Students not going to class on time.",
+  email: "johndoe@gmail.com",
+  cash: "$1-$5",
+}
 function emptyDisplay() {
   list.innerHTML = "";
 
-}  
-let problems = [problem0,problem1, problem2, problem3];
+}
+let problems = [problem0, problem1, problem2, problem3];
 function displayProblems() {
-  problems.forEach(function(problem,i) {
+  problems.forEach(function(problem, i) {
     list.insertAdjacentHTML('beforeend', `<li class="P">
     <p>Name: ${problem.name}</p>
     <p>Problem Description: ${problem.problem}</p>
@@ -54,7 +54,7 @@ function displayProblems() {
     <p>Award Range: ${problem.cash}</p>
     <p>Email: ${problem.email}</p>
   </li>`)
-    });
+  });
 }
 function addProblems() {
   let newProblem = {
